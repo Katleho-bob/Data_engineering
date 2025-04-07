@@ -1,18 +1,15 @@
-version: "3.9"
+version: '3.8'
 
 services:
   app1:
     build: .
     environment:
-      - NODE_ID=node1
+      - NODE_ID=1
     ports:
       - "5001:5000"
-
   app2:
     build: .
     environment:
-      - NODE_ID=node2
+      - NODE_ID=2
     ports:
       - "5002:5000"
-
-
