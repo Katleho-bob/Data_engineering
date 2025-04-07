@@ -19,3 +19,12 @@ First, clone this repository to your local machine:
 git clone https://github.com/Katleho-bob/Data_engineering.git
 
  
+### For Testing
+curl --location 'http://localhost:5001/time_diff' \
+--header 'Content-Type: application/json' \
+--data '{
+  "timestamps": [
+    ["Sun 10 May 2015 13:54:36 -0700", "Sun 10 May 2015 13:54:36 -0000"],
+    ["Sat 02 May 2015 19:54:36 +0530", "Fri 01 May 2015 13:54:36 -0000"]
+  ]
+}
